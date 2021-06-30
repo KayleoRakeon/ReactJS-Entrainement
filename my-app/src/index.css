@@ -90,3 +90,55 @@ header form button{
   font-weight:bold;
   color:white;
 }
+
+section{
+  width:100%;
+  height:auto;
+  padding:25px 50px;
+  box-sizing:border-box;
+}
+
+.appart{
+  width:calc(25% - (150px / 4));
+  height:auto;
+  float:left;
+  margin:0 25px;
+  background:rgba(255,255,255,0.9);
+  border-radius:15px;
+  overflow:hidden;
+  transition:all 0.25s ease-out;
+  box-shadow:0 1px 10px 0.2px rgba(0,0,0,0.8);
+}
+.appart:first-child{
+  margin:0 25px 0 0;
+}
+.appart:last-child{
+  margin:0 0 0 25px;
+}
+
+.appart img{
+  height:250px;
+  margin:0 0 10px 0;
+}
+
+.appart h2,
+.appart p{
+  padding:0 15px;
+  box-sizing:border-box;
+}
+
+.appart p:nth-child(3){
+  margin:5px 0 0 0;
+  text-align:right;
+  font-style:italic;
+}
+
+.appart p:last-child{
+  padding: 0 15px 10px 15px;
+  text-align:right;
+}
+
+.appart:hover{
+  transform:scale(1.03);
+  box-shadow:0 20px 30px 0.5px rgba(0,0,0,0.9);
+}

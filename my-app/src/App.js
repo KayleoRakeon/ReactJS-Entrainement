@@ -10,7 +10,7 @@ const appartements = [
     key: 0,
     dispo: true,
     nom: "Appartement n°1",
-    photo: "https://via.placeholder.com/300x230",
+    photo: "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg",
     prix: 45,
     note: 4,
   },
@@ -19,7 +19,7 @@ const appartements = [
     key: 1,
     dispo: false,
     nom: "Appartement n°2",
-    photo: "https://via.placeholder.com/350x200",
+    photo: "https://cdn.pixabay.com/photo/2015/02/02/23/39/hall-621741_1280.jpg",
     prix: 30,
     note: 2,
   },
@@ -28,7 +28,7 @@ const appartements = [
     key: 2,
     dispo: true,
     nom: "Appartement n°3",
-    photo: "https://via.placeholder.com/400x250",
+    photo: "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
     prix: 60,
     note: 5,
   },
@@ -37,7 +37,7 @@ const appartements = [
     key: 3,
     dispo: false,
     nom: "Appartement n°4",
-    photo: "https://via.placeholder.com/280x255",
+    photo: "https://cdn.pixabay.com/photo/2014/12/27/14/37/living-room-581073_1280.jpg",
     prix: 24,
     note: 3,
   }
@@ -74,9 +74,11 @@ class App extends Component {
           </button>
         </div>
 
-        {appartementsDispo.map(
-          appartement => <Appartement {...appartement} />
-        )}
+        <section>
+          {appartementsDispo.map(
+            appartement => <Appartement {...appartement} />
+          )}
+        </section>
       </div>
     )
   }
